@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/merged/debug/layout/activity_view_image.xml",
+        "source": "/home/sparrow/AndroidStudioProjects/ImageViewer/app/src/main/res/layout/activity_view_image.xml"
+    },
+    {
+        "merged": "/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/sparrow/AndroidStudioProjects/ImageViewer/app/src/main/res/layout/activity_main.xml"
+    }
+]

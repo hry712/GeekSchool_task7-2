@@ -1,0 +1,7 @@
+#Fri Oct 28 15:24:25 CST 2016
+base.0=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b9f7a21d4e5d0aedb0091723f67619759f3f943c
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f38b68ca332b57f29dd50be983f6f5817c5b13fb/classes.dex
+base.1=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f38b68ca332b57f29dd50be983f6f5817c5b13fb
+file.0=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b9f7a21d4e5d0aedb0091723f67619759f3f943c/classes.dex

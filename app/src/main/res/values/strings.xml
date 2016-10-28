@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ImageViewer</string>
+    <string name="btn_openImg">Open Image</string>
+</resources>
