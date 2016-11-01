@@ -1,4 +1,4 @@
-#Fri Oct 28 15:24:25 CST 2016
+#Tue Nov 01 16:01:05 CST 2016
 base.0=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b9f7a21d4e5d0aedb0091723f67619759f3f943c
 renamed.1=classes.dex
 renamed.0=classes2.dex

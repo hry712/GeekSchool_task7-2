@@ -1,11 +1,11 @@
 #Internal package file, do not edit.
-#Wed Oct 26 15:51:30 CST 2016
+#Tue Nov 01 16:01:06 CST 2016
 20.set=DEX
 19.set=DEX
 8.set=DEX
 1.base=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b9f7a21d4e5d0aedb0091723f67619759f3f943c
 1.file=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b9f7a21d4e5d0aedb0091723f67619759f3f943c/classes.dex
-3.file=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_view_image.xml
+3.file=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
 3.base=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/resources-debug.ap_
 15.set=ANDROID_RESOURCE
 4.set=DEX
@@ -21,7 +21,7 @@
 13.base=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9
 11.set=ANDROID_RESOURCE
 0.set=DEX
-15.file=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_main.xml
+15.file=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/resources-debug.ap_/res/mipmap-xhdpi-v4/ic_launcher.png
 15.base=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/resources-debug.ap_
 18.set=DEX
 17.file=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/resources-debug.ap_/res/mipmap-mdpi-v4/ic_launcher.png
@@ -36,7 +36,7 @@
 0.file=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex
 17.set=ANDROID_RESOURCE
 6.set=ANDROID_RESOURCE
-2.file=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+2.file=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_view_image.xml
 2.base=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/resources-debug.ap_
 4.file=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex
 4.base=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2
@@ -52,7 +52,7 @@
 20.base=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1
 12.file=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/resources-debug.ap_/res/mipmap-hdpi-v4/ic_launcher.png
 12.base=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/resources-debug.ap_
-14.file=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/resources-debug.ap_/res/mipmap-xhdpi-v4/ic_launcher.png
+14.file=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_main.xml
 14.base=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/resources-debug.ap_
 16.file=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/resources-debug.ap_/resources.arsc
 16.base=/home/sparrow/AndroidStudioProjects/ImageViewer/app/build/intermediates/res/resources-debug.ap_

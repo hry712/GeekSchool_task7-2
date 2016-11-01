@@ -9,8 +9,8 @@ This project contains two activities:
 
 ## MainActivity
 
-The basic initial activity of this app. It only provide a button widget on its UI. When you click down the button, a system question dialog will ask you to select an implicit activity to start.
+The basic initial activity of this app. It only provides a button widget on its UI. When you click down the button, a system question dialog will ask you to select an implicit activity to start.
 
 ## ViewImageActivity
 
-A custom activity to give users another choice to start for images viewing.
+A custom activity gives users another choice to view images.

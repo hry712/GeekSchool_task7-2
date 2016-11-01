@@ -15,16 +15,15 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // 初始化按钮
         btnOpenImg = (Button)findViewById(R.id.btn_openImg);
+
         btnOpenImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent();
-                intent.setData(Uri.parse("content://media/internal/images/media"));
-//                Intent intent = new Intent(Intent.ACTION_VIEW);
-//                startActivity(new Intent(ViewImageActivity.ACTION));
-//                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("content://media/internal/images/media"));
-//                intent.setType("images/*");
+                // 设置按钮点击后触发的 Activity 响应
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("content://media/internal/images/media"));
+                intent.setType("image/*");
                 startActivity(intent);
             }
         });
