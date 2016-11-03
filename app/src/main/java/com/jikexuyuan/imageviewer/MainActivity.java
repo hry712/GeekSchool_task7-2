@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -27,56 +28,27 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // Initial the Open button widget
-        btnOpenImg = (Button)findViewById(R.id.btn_openImg);
-        SaveImgToLocalPath(R.drawable.test,
-                ViewImageActivity.DEFAULT_IMG_PATH,
-                ViewImageActivity.DEFAULT_IMG_FILENAME);
-//        System.out.println(Environment.getExternalStorageDirectory().getAbsolutePath());
 
+        // 初始化打开图片按钮
+        btnOpenImg = (Button)findViewById(R.id.btn_openImg);
+
+        // 为打开图片按钮添加点击响应事件
         // Set the OnClickListener for Open Img Button
+        // Since this work is really simple, it doesn't need a switch/case structure
+        // to handle the click event.
         btnOpenImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // The next step is sending the local img file info to the target activity
-                // I think the location string can meet the demand.
-                String local_img_path = ViewImageActivity.DEFAULT_IMG_PATH +
-                        ViewImageActivity.DEFAULT_IMG_FILENAME;
                 // 设置按钮点击后触发的 Activity 响应
+                Bitmap default_img = BitmapFactory.decodeResource(getResources(), R.drawable.test);
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                Uri img_uri = Uri.parse("file://"
-                        + ViewImageActivity.DEFAULT_IMG_PATH
-                        + ViewImageActivity.DEFAULT_IMG_FILENAME);
+                Uri img_uri = Uri.parse(MediaStore.Images.Media.insertImage(getContentResolver(),
+                        default_img,
+                        null,
+                        null));
                 intent.setDataAndType(img_uri, "image/*");
                 startActivity(intent);
             }
         });
-    }
-
-    private void SaveImgToLocalPath(int ImgResID, String LocalPath, String LocalFileName) {
-        // 尝试将工程中的图片缓存到本地存储中，再将图片所在地址传递过去
-        // 还需要知道自带的图片浏览器接收图片资源的方式
-        // Withdraw the img resource in this project, then save it as a Bitmap Obj to local storage.
-        Bitmap img_res = BitmapFactory.decodeResource(
-                getApplicationContext().getResources(),
-                ImgResID);
-
-        // Save the img file to the default local dir
-        File img_tmp = new File(LocalPath, LocalFileName);
-        try {
-            FileOutputStream fo = new FileOutputStream(img_tmp);
-            img_res.compress(Bitmap.CompressFormat.JPEG, 90, fo);
-            fo.flush();
-            fo.close();
-            // Send broadcast to System Image Viewer
-            Intent iv_intent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
-            Uri uri = Uri.fromFile(img_tmp);
-            iv_intent.setData(uri);
-            sendBroadcast(iv_intent);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 }

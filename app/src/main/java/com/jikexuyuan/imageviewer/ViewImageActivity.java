@@ -20,8 +20,6 @@ import java.net.URL;
 public class ViewImageActivity extends Activity {
 
     private ImageView imageView;
-    public static final String DEFAULT_IMG_PATH = "/storage/sdcard/Pictures/";
-    public static final String DEFAULT_IMG_FILENAME = "test.jpg";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +27,7 @@ public class ViewImageActivity extends Activity {
         setContentView(R.layout.activity_view_image);
 
         imageView = (ImageView)findViewById(R.id.iv_ImageView);
+        // 直接从 Uri 中读取图片文件的信息并显示
         imageView.setImageURI(getIntent().getData());
     }
 }
